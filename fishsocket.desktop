@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Fish Socket Server
+Exec=/bin/sh /home/pi/serverprocess.sh
+Terminal=true
+Type=Application
+X-GNOME-Autostart-Phase=Initialization

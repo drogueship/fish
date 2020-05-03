@@ -1,0 +1,16 @@
+# This is a basic .service file used with systemd to control vgetty.
+#
+# Vgetty turns your voice modem into an answering machine.  
+# It is apart of the mgetty package. http://alpha.greenie.net/vgetty/
+
+[Unit]
+Description=Vgetty turns your voice modem into an answering machine
+After=syslog.target
+
+[Service]
+ExecStart=/usr/sbin/vgetty /dev/ttyACM0
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target
